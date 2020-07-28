@@ -71,6 +71,6 @@ In the Nav, i can see the Logo
   - With the type and id we will put it in the **location_details**
     - in here we will grab _best_rated_details_ , _reviews_, _ratings_, etc...
 
-3. Trip advisor api
+3. Hotel RapidApi
 
--
+- get location search just based on the city name given and then look for the _suggestions_ -> Which ever one that will give us the _hotel group_ -> **Names of hotels** and _other info_ that we can be given.
