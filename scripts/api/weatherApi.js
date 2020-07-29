@@ -8,3 +8,7 @@ function getMainForecast(queryUrl) {
     console.log(response);
   });
 }
+
+// grab 5 day forecast
+
+// display weather info here
