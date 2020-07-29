@@ -9,6 +9,14 @@ main {
 }
 
 img {
-  height: 64px;
-  width: 150px;
+  height: 83px;
+  width: 175px;
+}
+
+nav {
+  background-color: #01969d;
+}
+.navbar {
+  height: 85px;
+  justify-content: center;
 }
