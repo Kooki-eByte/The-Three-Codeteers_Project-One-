@@ -18,5 +18,5 @@ $(document).on("submit", ".search-bar", () => {
   let cityName = $("input").val();
   console.log("cityName is", cityName);
 
-  // getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
+  getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
 });
