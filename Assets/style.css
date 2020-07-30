@@ -2,6 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: url(../images/NSW-3f087f13b1ca31212b82e2f09c384f3d.jpg);
 }
 
 main {
@@ -15,8 +16,13 @@ img {
 
 nav {
   background-color: #01969d;
+  margin-bottom: 40px;
 }
 
 .nav-wrapper {
   justify-content: center;
+  
+}
+.search-bar {
+  background-color: #FBFEF9;
 }
