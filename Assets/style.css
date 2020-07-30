@@ -16,7 +16,7 @@ img {
 nav {
   background-color: #01969d;
 }
-.navbar {
-  height: 85px;
+
+.nav-wrapper {
   justify-content: center;
 }
