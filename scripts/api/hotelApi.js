@@ -14,6 +14,27 @@ function getHotelInfo(city) {
   };
 
   $.ajax(settings).done(function (response) {
-    console.log(response);
+    hotelName = [];
+    for (let i = 0; i < 3; i++) {
+      hotelName.push(response.suggestions[3].entities[i].name); // name of the **suggested** hotels
+    }
+
+    $("#hotel-name").text(hotelName[0]); // Apply the first name of the hotel on the card
+
+    // whenever the user click a hotel name then the text will change to the corresponding hotel
+    $(document).on("click", ".hotel", (event) => {
+      event.preventDefault();
+      let hotelOption = event.target.textContent;
+
+      if (hotelOption === "Hotel 1") {
+        $("#hotel-name").text(hotelName[0]);
+      } else if (hotelOption === "Hotel 2") {
+        $("#hotel-name").text(hotelName[1]);
+      } else {
+        $("#hotel-name").text(hotelName[2]);
+      }
+    });
   });
 }
+
+// event listener for the hotel card

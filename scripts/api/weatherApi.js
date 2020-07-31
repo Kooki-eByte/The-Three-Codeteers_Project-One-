@@ -10,7 +10,6 @@ function getMainForecast(city, isHotel, isRestaurant) {
     url: queryUrlMain,
     method: "GET",
   }).then(function (response) {
-    console.log(response);
     let cityName = response.name; // city name
     let tempK = response.main.temp; // temp in kelvin
     let tempF = tempK * (9 / 5) - 459.67;
@@ -140,8 +139,3 @@ function display5DayForecast(dailyTime, dailyIcon, dailyTempF, dailyHumid) {
     humidForecast.text(dailyHumid[i] + "%");
   }
 }
-
-// check if the isHotel and/or isRestaurant are true or false
-
-// getHotelInfo(city);
-// getRestaurantInfo(lat, lon);
