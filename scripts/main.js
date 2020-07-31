@@ -16,7 +16,12 @@ $(document).on("submit", (event) => {
 // When user presses enter they will start the chain of events
 $(document).on("submit", ".search-bar", () => {
   let cityName = $("input").val();
-  console.log("cityName is", cityName);
+
+  getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
+});
+
+$(document).on("click", ".search-icon", () => {
+  let cityName = $("input").val();
 
   getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
 });

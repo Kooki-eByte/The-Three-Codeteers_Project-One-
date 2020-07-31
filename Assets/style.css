@@ -21,16 +21,11 @@ nav {
 
 .nav-wrapper {
   justify-content: center;
-  
-  
 }
 .search-bar {
-  background-color: #FBFEF9;
+  background-color: #fbfef9;
 }
 #logo {
-  box-shadow:  gray 10px 10px 15px 8px; 
-  
-  border: solid #48A9A6;
+  box-shadow: gray 0px 3px 20px 3px;
+  border: solid #48a9a6;
 }
-
- 
