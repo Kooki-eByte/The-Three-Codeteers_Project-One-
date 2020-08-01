@@ -1,0 +1,17 @@
+body {
+    background-color: #FFF;
+}
+nav {
+    background-color: #01969d;
+    margin-bottom: 40px;
+}
+img {
+  height: 83px;
+  width: 175px;
+}
+.page-footer {
+  background-color: #ffd100;
+position: relative ;
+top: 100vh;
+
+}
