@@ -1,9 +1,24 @@
 body {
-    background-color: #FFF;
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(../images/NSW-3f087f13b1ca31212b82e2f09c384f3d.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 1.5s ease-in-out;
+}
+body:hover {
+  background-image: url(../images/image001.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 1.5s ease-in-out;
 }
 nav {
     background-color: #01969d;
     margin-bottom: 40px;
+}
+.nav-wrapper {
+  justify-content: center;
 }
 img {
   height: 83px;
@@ -14,4 +29,8 @@ img {
 position: relative ;
 top: 100vh;
 
+}
+.logo {
+  box-shadow: #03393bbe 0px 3px 20px 3px;
+  border: solid #48a9a6;
 }
