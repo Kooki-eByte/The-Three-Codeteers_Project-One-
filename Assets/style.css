@@ -50,3 +50,8 @@ nav {
 .hide {
   display: none;
 }
+
+.filter {
+  float: left;
+  z-index: 2;
+}
