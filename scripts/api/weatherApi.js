@@ -82,19 +82,19 @@ function get5DayForecast(lati, long) {
       dailyDateArr.push(dailyDate);
     }
 
-    // display5DayForecast(
-    //   dailyDateArr,
-    //   dailyIconArr,
-    //   dailyTempArr,
-    //   dailyHumidArr
-    // );
+    display5DayForecast(
+      dailyDateArr,
+      dailyIconArr,
+      dailyTempArr,
+      dailyHumidArr
+    );
   });
 }
 // display weather info here
 function displayMainForecast(city, humidity, windSpd, WeatherIcon, temp) {
   let now = moment().format("LL");
   // City title
-  $(".card-title").text(city + " ");
+  $(".main-title").text(city + " ");
 
   // todays date
   $("#current-date").text(now);
@@ -121,21 +121,21 @@ function displayMainForecast(city, humidity, windSpd, WeatherIcon, temp) {
 }
 
 function display5DayForecast(dailyTime, dailyIcon, dailyTempF, dailyHumid) {
-  for (let i = 0; i < dailyTempF.length; i++) {
+  for (let i = 0; i < 5; i++) {
     // date
-    let dateForecast = $("#forecast-date-" + i);
+    let dateForecast = $("#5d-date-" + i);
     dateForecast.text(dailyTime[i]);
     // icon
-    let iconForecast = $("#forecast-icon-" + i);
+    let iconForecast = $("#5d-icon-" + i);
     iconForecast.attr(
       "src",
       "http://openweathermap.org/img/wn/" + dailyIcon[i] + "@2x.png"
     );
     // temp
-    let tempForecast = $("#forecast-temp-" + i);
+    let tempForecast = $("#5d-temperature-" + i);
     tempForecast.text(dailyTempF[i] + "\u00B0F");
     // Humidity
-    let humidForecast = $("#forecast-humid-" + i);
+    let humidForecast = $("#5d-humidity-" + i);
     humidForecast.text(dailyHumid[i] + "%");
   }
 }
