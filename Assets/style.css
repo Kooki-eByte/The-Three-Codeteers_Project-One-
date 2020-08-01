@@ -3,6 +3,17 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-image: url(../images/NSW-3f087f13b1ca31212b82e2f09c384f3d.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 1.5s ease-in-out;
+}
+
+/* Change the background img on hover to the weather, hotel, rest. cards */
+body:hover {
+  background-image: url(../images/image001.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  transition: all 1.5s ease-in-out;
 }
 
 main {
@@ -30,6 +41,10 @@ nav {
 .logo {
   box-shadow: #03393bbe 0px 3px 20px 3px;
   border: solid #48a9a6;
+}
+
+.page-footer {
+  background-color: #01969d;
 }
 
 .hide {

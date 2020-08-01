@@ -25,3 +25,7 @@ $(document).on("click", ".search-icon", () => {
 
   getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
 });
+
+$(document).ready(function () {
+  $("select").formSelect();
+});
