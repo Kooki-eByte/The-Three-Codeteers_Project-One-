@@ -24,9 +24,9 @@ function getMainForecast(city, isHotel, isRestaurant) {
     if (isHotel === true && isRestaurant === true) {
       getHotelInfo(city);
       getRestaurantInfo(lat, lon);
-    } else if (isRestaurant === false) {
+    } else if (isRestaurant === false && isHotel === true) {
       getHotelInfo(city);
-    } else if (isHotel === false) {
+    } else if (isHotel === false && isRestaurant === true) {
       getRestaurantInfo(lat, lon);
     } else {
       return;

@@ -22,10 +22,16 @@ nav {
 .nav-wrapper {
   justify-content: center;
 }
+
 .search-bar {
   background-color: #fbfef9;
 }
+
 #logo {
   box-shadow: gray 0px 3px 20px 3px;
   border: solid #48a9a6;
+}
+
+.hide {
+  display: none;
 }
