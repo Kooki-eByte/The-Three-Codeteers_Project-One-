@@ -30,11 +30,21 @@
     <link rel="stylesheet" href="./Assets/style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
   <body>
       <nav>
         <div class="nav-wrapper" style="height: 83px;">
+
+          <div class="input-field filter col s12">        
+            <select multiple>
+              <option value="1">Hotels</option>
+              <option value="2">Restaurants</option>
+              <option value="3" disabled selected>Attractions</option>
+            </select>
+            <label>Filter</label>
+          </div> 
+
+
           <a href="#" class="brand-logo center"
             ><img src="Assets/TraveLux nav.png" class="logo"
           /></a>
@@ -53,6 +63,7 @@
               >
             </li>
           </ul>
+          
         </div>
       </nav>
   
