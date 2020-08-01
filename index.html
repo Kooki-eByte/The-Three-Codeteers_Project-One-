@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -32,16 +35,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <body>
+
       <nav>
         <div class="nav-wrapper" style="height: 83px;">
 
-          <div class="input-field filter col s12">        
+          <div class="input-field filter col 18">        
             <select multiple>
               <option value="1">Hotels</option>
               <option value="2">Restaurants</option>
-              <option value="3" disabled selected>Attractions</option>
+              <option value="3" disabled>Attractions</option>
             </select>
-            <label>Filter</label>
+            <label id="filter-name">Filter</label>
           </div> 
 
 
@@ -248,7 +252,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Moment.js link -->
   </body>
 </html>
