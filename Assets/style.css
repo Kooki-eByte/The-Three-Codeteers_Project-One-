@@ -39,7 +39,8 @@ nav {
 }
 
 .search-bar {
-  background-color: #03969c;
+  background-color: #ffd100;
+  box-shadow: #03393bbe 0px 3px 20px 3px;
 }
 
 .logo {
@@ -48,7 +49,7 @@ nav {
 }
 
 .page-footer {
-  background-color: #ffd100
+  background-color: #01969d;
 }
 
 .hide {
@@ -60,5 +61,8 @@ nav {
   z-index: 2;
 }
 
+.weather-card {
+  justify-content: center;
+}
 /* .label {
 } */
