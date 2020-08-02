@@ -59,6 +59,7 @@ nav {
 .filter {
   float: left;
   z-index: 2;
+  width: 300px;
 }
 
 .weather-card {

@@ -23,8 +23,8 @@
     />
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <!-- API JavaScript links -->
-    <!-- <script src="./scripts/api/zomatoApi.js" type="text/javascript"></script> -->
-    <!-- <script src="./scripts/api/hotelApi.js" type="text/javascript"></script> -->
+    <script src="./scripts/api/zomatoApi.js" type="text/javascript"></script>
+    <script src="./scripts/api/hotelApi.js" type="text/javascript"></script>
     <script src="./scripts/api/weatherApi.js" type="text/javascript"></script>
     <!-- Main JavaScript -->
     <script src="./scripts/main.js" type="text/javascript"></script>
@@ -39,13 +39,14 @@
       <nav>
         <div class="nav-wrapper" style="height: 83px;">
 
-          <div class="input-field filter col 18">        
-            <select multiple>
-              <option value="1" id="hotelOption">Hotels</option>
-              <option value="2" id="restaurantOption">Restaurants</option>
-              <option value="3" disabled>Attractions</option>
-            </select>
+          <div class="input-field filter col 18">
             <label id="filter-name">Filter</label>
+            <select multiple>
+              <option value="hotelF" id="hotelOption"><p>Hotels</p></option>
+              <option value="restaurantF" id="restaurantOption">Restaurants</option>
+              <option value="false" disabled>Attractions</option>
+            </select>
+            
           </div> 
 
 
