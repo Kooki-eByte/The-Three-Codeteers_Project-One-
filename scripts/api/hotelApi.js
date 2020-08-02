@@ -15,7 +15,6 @@ function getHotelInfo(city) {
 
   $.ajax(settings).done(function (response) {
     $(".hotel-card").removeClass("hide");
-    console.log(response);
     hotelName = [];
     for (let i = 0; i < 3; i++) {
       hotelName.push(response.suggestions[3].entities[i].name); // name of the **suggested** hotels
@@ -38,5 +37,3 @@ function getHotelInfo(city) {
     });
   });
 }
-
-// event listener for the hotel card

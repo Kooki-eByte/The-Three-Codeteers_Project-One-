@@ -1,6 +1,9 @@
 $(document).ready(function () {
   // This is the main logic (event listeners and storing data and calling the functions for the APIs)
 
+  // Grabbing the values of the selected
+  $("select").formSelect();
+
   // Get the current date for user
   let now = moment().format("LL");
   console.log("now", now);
@@ -15,20 +18,25 @@ $(document).ready(function () {
   // When user presses enter they will start the chain of events
   $(document).on("submit", ".search-bar", () => {
     let cityName = $("#search").val();
+    let choices = $("select").formSelect("getSelectedValues");
+    let isHotelOn = false;
+    let isRestaurantOn = false;
+    choices.forEach((element) => {
+      if (element === "hotelF") {
+        isHotelOn = true;
+      } else if (element === "restaurantF") {
+        isRestaurantOn = true;
+      } else {
+        isHotelOn = false;
+        isRestaurantOn = false;
+      }
+    });
 
+    $(".hotel-card").addClass("hide");
+    $(".restaurant-card").addClass("hide");
+    console.log(isHotelOn);
+    console.log(isRestaurantOn);
     console.log(cityName);
-    getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
+    getMainForecast(cityName, isHotelOn, isRestaurantOn);
   });
-
-  $(document).on("click", ".search-icon", () => {
-    let cityName = $("#search").val();
-
-    getMainForecast(cityName, isHotelAccepted, isRestaurantAccepted);
-  });
-
-  $("select").formSelect();
-  let isHotelAccepted = $("select").formSelect($("#hotelOption")[0][0]);
-  console.log("isHotelAccepted", isHotelAccepted);
-  let isRestaurantAccepted = $("select").formSelect($("#restaurantOption"));
-  console.log("isRestaurantAccepted", isRestaurantAccepted);
 });
