@@ -2,13 +2,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url(../images/NSW-3f087f13b1ca31212b82e2f09c384f3d.jpg);
+  background-image: url(../images/DenSkyline\.jpg);
   background-size: cover;
   background-attachment: fixed;
   transition: all 1.5s ease-in-out;
 }
 body:hover {
-  background-image: url(../images/image001.jpg);
+  background-image: url(../images/sfoPic.jpg);
   background-size: cover;
   background-attachment: fixed;
   transition: all 1.5s ease-in-out;
@@ -26,7 +26,6 @@ img {
 }
 .page-footer {
   background-color: #ffd100;
-  position: relative;
   top: 100vh;
 }
 .logo {
@@ -36,4 +35,10 @@ img {
 .card-img {
   height: 200px;
   width: 200px;
+}
+
+.aboutus-card {
+  display: flex;
+  margin-right: auto;
+  text-align: center;
 }

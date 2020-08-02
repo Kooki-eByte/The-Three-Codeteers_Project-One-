@@ -1,7 +1,6 @@
-
 nav {
-    background-color: #01969d;
-    margin-bottom: 40px;
+  background-color: #01969d;
+  margin-bottom: 40px;
 }
 img {
   height: 83px;
@@ -9,7 +8,4 @@ img {
 }
 .page-footer {
   background-color: #ffd100;
-position: relative ;
-top: 100vh;
-
 }
