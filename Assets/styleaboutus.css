@@ -1,5 +1,5 @@
 body {
-    display: flex;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
   background-image: url(../images/NSW-3f087f13b1ca31212b82e2f09c384f3d.jpg);
@@ -14,8 +14,8 @@ body:hover {
   transition: all 1.5s ease-in-out;
 }
 nav {
-    background-color: #01969d;
-    margin-bottom: 40px;
+  background-color: #01969d;
+  margin-bottom: 40px;
 }
 .nav-wrapper {
   justify-content: center;
@@ -26,11 +26,14 @@ img {
 }
 .page-footer {
   background-color: #ffd100;
-position: relative ;
-top: 100vh;
-
+  position: relative;
+  top: 100vh;
 }
 .logo {
   box-shadow: #03393bbe 0px 3px 20px 3px;
   border: solid #48a9a6;
+}
+.card-img {
+  height: 200px;
+  width: 200px;
 }
