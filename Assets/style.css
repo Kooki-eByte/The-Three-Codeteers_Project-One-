@@ -16,9 +16,6 @@ body:hover {
   transition: all 1.5s ease-in-out;
 }
 
-/* .weather-card {
-  background-color: ;
-} */
 
 main {
   flex: 1 0 auto;

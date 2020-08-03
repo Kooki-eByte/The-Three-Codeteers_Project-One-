@@ -13,6 +13,12 @@ body:hover {
   background-attachment: fixed;
   transition: all 1.5s ease-in-out;
 }
+
+main {
+  flex: 1 0 auto;
+}
+
+
 nav {
   background-color: #01969d;
   margin-bottom: 40px;
