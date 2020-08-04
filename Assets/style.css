@@ -62,6 +62,18 @@ nav {
   justify-content: center;
 }
 
+.hotel-card {
+  background-color: #ffd000d0;
+}
+
+.restaurant-card {
+  background-color: #ffd000d0;
+}
+
+.activate {
+  color: #01969d;
+}
+
 .page-footer {
   background-color: #01969d;
 }
