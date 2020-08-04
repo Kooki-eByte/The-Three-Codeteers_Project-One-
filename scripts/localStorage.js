@@ -1,17 +1,39 @@
-//  <div class="row weather-card">
-{/* <h5 class="fiveDayText">5 Day Forecast</h5>
-          
-<div id="fiveDay-0" class="5-day-forecast-0 col">
-  <div class="cardZero"> */}
-// 
-// <div id="fiveDay-1" class="5-day-forecast-1 col">
-{/* <div class="cardOne"> */}
+// Local storage data for contact us page
+let userInfo = JSON.parse(localStorage.getItem("userInfo"));
+let submitBtn = $("#submit-btn");
+let usersInfoArr = [];
+$(document).on("click", function (event) {
+  event.preventDefault();
+});
 
-{/* <div id="fiveDay-2" class="5-day-forecast-2 col">
-              <div class="cardTwo"></div> */}
+function getUsersInfo() {
+  let userInfoObj = {
+    firstname: firstName,
+    lastname: lastName,
+    Email: email,
+    text: message,
+  };
 
-{/* <div id="fiveDay-3" class="5-day-forecast-3 col">
-              <div class="cardThree"></div> */}
+  usersInfoArr.push(userInfoObj);
+  localStorage.setItem("userInfo", JSON.stringify(usersInfoArr));
+}
 
-{/* <div id="fiveDay-4"class="5-day-forecast-4 col">
-              <div class="cardFour"></div> */}
+function clearBoard() {
+  $("#first_name").val("");
+  $("#last_name").val("");
+  $("#email").val("");
+  $("#message").val("");
+}
+
+$(document).on("click", "#submit-btn", () => {
+  let firstName = $("#first_name").val();
+  let lastName = $("#last_name").val();
+  let email = $("#email").val();
+  let message = $("#message").val();
+  if (firstName === "" || lastName === "" || email === "" || message === "") {
+    return false;
+  } else {
+    getUsersInfo(firstName, lastName, email, message);
+    clearBoard();
+  }
+});
