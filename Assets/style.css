@@ -36,6 +36,7 @@ p.r-title {
 }
 p.card-title.main-title {
   font-size: 45px;
+  text-shadow: #000000;
 }
 
 a.active.hotel {
@@ -251,6 +252,7 @@ nav {
 
 .page-footer {
   background-color: #01969d;
+  font-weight: bolder;
 }
 
 .hide {
@@ -261,4 +263,13 @@ nav {
   float: left;
   z-index: 2;
   width: 25%;
+}
+
+.select-wrapper input.select-dropdown {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+#search-section {
+  font-weight: bolder;
 }

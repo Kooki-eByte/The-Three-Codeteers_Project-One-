@@ -24,7 +24,7 @@ nav {
 }
 
 p {
-  font-weight: bolder;
+  font-weight: bold;
 }
 .nav-wrapper {
   justify-content: center;
@@ -50,6 +50,9 @@ img {
 .card-content {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  height: 250px;
+
+  text-align: center;
 }
 
 .card-action {
@@ -65,6 +68,7 @@ img {
 .page-footer {
   background-color: #01969d;
   top: 100vh;
+  font-weight: bolder;
 }
 .logo {
   box-shadow: #03393bbe 0px 3px 20px 3px;
