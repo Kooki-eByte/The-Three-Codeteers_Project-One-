@@ -24,6 +24,28 @@ img {
   height: 83px;
   width: 175px;
 }
+
+p.h-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+p.r-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+p.card-title.main-title {
+  font-size: 45px;
+}
+
+a.active.hotel {
+  font-weight: bold;
+}
+
+a.active.restaurants {
+  font-weight: bold;
+}
+
 #fiveDay-0 {
   background-color: #e5eafa;
   border-radius: 15px;
@@ -103,11 +125,17 @@ nav {
   font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   text-align: center;
   font-weight: 400 bold;
+  font-size: 30px;
 }
 
 .card-title {
   border-radius: 50%;
   background-color: #ffe895;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 bold;
 }
 
 .cardZero {
@@ -141,6 +169,7 @@ nav {
 }
 
 .weather-card {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   background-color: #01969d;
 }
@@ -184,22 +213,27 @@ nav {
 }
 
 #fiveday-date-0 {
+  font-family: "Oswald", sans-serif;
   padding: 10px;
 }
 
 #fiveday-date-1 {
+  font-family: "Oswald", sans-serif;
   padding: 10px;
 }
 
 #fiveday-date-2 {
+  font-family: "Oswald", sans-serif;
   padding: 10px;
 }
 
 #fiveday-date-3 {
+  font-family: "Oswald", sans-serif;
   padding: 10px;
 }
 
 #fiveday-date-4 {
+  font-family: "Oswald", sans-serif;
   padding: 10px;
 }
 
