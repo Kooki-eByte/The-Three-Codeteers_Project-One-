@@ -10,6 +10,7 @@ function getMainForecast(city, isHotel, isRestaurant) {
     url: queryUrlMain,
     method: "GET",
   }).then(function (response) {
+    $(".main-fiveDay-weather-card").removeClass("hide");
     let cityName = response.name; // city name
     let tempK = response.main.temp; // temp in kelvin
     let tempF = tempK * (9 / 5) - 459.67;
