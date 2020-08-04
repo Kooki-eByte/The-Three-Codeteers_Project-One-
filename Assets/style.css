@@ -16,7 +16,6 @@ body:hover {
   transition: all 1.5s ease-in-out;
 }
 
-
 main {
   flex: 1 0 auto;
 }
@@ -26,25 +25,27 @@ img {
   width: 175px;
 }
 #fiveDay-0 {
-  background-color: #E5EAFA;
+  background-color: #e5eafa;
   border-radius: 15px;
-  
 }
+
 #fiveDay-1 {
-  background-color: #E5EAFA;
+  background-color: #e5eafa;
   border-radius: 15px;
-  
 }
+
 #fiveDay-2 {
-  background-color: #E5EAFA;
+  background-color: #e5eafa;
   border-radius: 15px;
 }
+
 #fiveDay-3 {
-  background-color: #E5EAFA;
+  background-color: #e5eafa;
   border-radius: 15px;
 }
+
 #fiveDay-4 {
-  background-color: #E5EAFA;
+  background-color: #e5eafa;
   border-radius: 15px;
 }
 
@@ -56,33 +57,77 @@ nav {
 .nav-wrapper {
   justify-content: center;
 }
+
+.main-title {
+  color: black;
+
+  font-weight: 500 bolder;
+}
+
+#main-icon {
+  height: 200px;
+  width: 200px;
+}
+
+#current-date {
+  font-size: 1.5em;
+}
+
+#main-temp {
+  font-size: 1.5em;
+}
+
+#main-humidity {
+  font-size: 1.5em;
+}
+
+#main-wind {
+  font-size: 1em;
+}
+
+#main-uv {
+  margin-left: 43%;
+  padding-top: 20px;
+  border-radius: 75%;
+  width: 75px;
+  height: 75px;
+  font-size: 1.5em;
+}
+
 .weather-card {
   background-color: rgb(22, 154, 241);
 }
+
 .fiveDayText {
   color: rgb(20, 16, 6);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   text-align: center;
   font-weight: 400 bold;
-  
 }
+
 .card-title {
-  background-color: #ff0037;
+  border-radius: 50%;
+  background-color: #ffe895;
 }
+
 .cardZero {
-  background-color: #C6CCB2;
+  background-color: #c6ccb2;
 }
+
 .cardOne {
-  background-color: #C6CCB2;
+  background-color: #c6ccb2;
 }
+
 .cardTwo {
-  background-color: #C6CCB2;
+  background-color: #c6ccb2;
 }
+
 .cardThree {
-  background-color: #C6CCB2;
+  background-color: #c6ccb2;
 }
+
 .cardFour {
-  background-color: #C6CCB2;
+  background-color: #c6ccb2;
 }
 
 .search-bar {
@@ -97,9 +142,10 @@ nav {
 
 .weather-card {
   text-align: center;
+  background-color: #01969d;
 }
 
-.main-fiveDay-weather-card{
+.main-fiveDay-weather-card {
   text-align: center;
   background-color: #ffd00083;
   justify-content: center;
@@ -110,6 +156,51 @@ nav {
   text-align: center;
   background-color: #ffd100;
   justify-content: center;
+}
+
+#fiveday-icon-0 {
+  height: 75px;
+  width: 75px;
+}
+
+#fiveday-icon-1 {
+  height: 75px;
+  width: 75px;
+}
+
+#fiveday-icon-2 {
+  height: 75px;
+  width: 75px;
+}
+
+#fiveday-icon-3 {
+  height: 75px;
+  width: 75px;
+}
+
+#fiveday-icon-4 {
+  height: 75px;
+  width: 75px;
+}
+
+#fiveday-date-0 {
+  padding: 10px;
+}
+
+#fiveday-date-1 {
+  padding: 10px;
+}
+
+#fiveday-date-2 {
+  padding: 10px;
+}
+
+#fiveday-date-3 {
+  padding: 10px;
+}
+
+#fiveday-date-4 {
+  padding: 10px;
 }
 
 .hotel-card {
@@ -135,6 +226,5 @@ nav {
 .filter {
   float: left;
   z-index: 2;
-  width: 300px;
+  width: 25%;
 }
-

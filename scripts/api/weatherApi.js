@@ -103,6 +103,7 @@ function displayMainForecast(city, humidity, windSpd, WeatherIcon, temp) {
   // Weather icon
   $("#main-icon").empty();
   let createImg = $("<img>");
+  createImg.attr("id", "main-icon");
   createImg.attr(
     "src",
     "http://openweathermap.org/img/wn/" + WeatherIcon + "@2x.png"
@@ -124,10 +125,10 @@ function displayMainForecast(city, humidity, windSpd, WeatherIcon, temp) {
 function display5DayForecast(dailyTime, dailyIcon, dailyTempF, dailyHumid) {
   for (let i = 0; i < 5; i++) {
     // date
-    let dateForecast = $("#5d-date-" + i);
+    let dateForecast = $("#fiveday-date-" + i);
     dateForecast.text(dailyTime[i]);
     // icon
-    let iconForecast = $("#5d-icon-" + i);
+    let iconForecast = $("#fiveday-icon-" + i);
     iconForecast.attr(
       "src",
       "http://openweathermap.org/img/wn/" + dailyIcon[i] + "@2x.png"
