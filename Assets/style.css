@@ -45,6 +45,23 @@ nav {
   border: solid #48a9a6;
 }
 
+.weather-card {
+  text-align: center;
+}
+
+.main-fiveDay-weather-card{
+  text-align: center;
+  background-color: #ffd00083;
+  justify-content: center;
+}
+
+.fiveDay-weather-card {
+  border: black;
+  text-align: center;
+  background-color: #ffd100;
+  justify-content: center;
+}
+
 .page-footer {
   background-color: #01969d;
 }
@@ -59,8 +76,3 @@ nav {
   width: 300px;
 }
 
-.weather-card {
-  justify-content: center;
-}
-/* .label {
-} */
