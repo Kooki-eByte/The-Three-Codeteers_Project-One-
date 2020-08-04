@@ -59,8 +59,8 @@ img {
 
 #message {
   height: 150px;
-  width: 1152.8px;
   resize: none;
+  position: relative;
   background-color: #01959dc0;
   text-shadow: #000000;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.6);
